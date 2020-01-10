@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace BotsVsDino
 {
-    class Robot
-    {
-        public string Name;
-        public double Health;
-        public double  YourPowerLevel;
-        public string Weapon;
-        public double WeaponPowerLevel;
+     class Robot
+    { 
+        public double RoboHealth;
+        public double  RoboAtkPower;
+        List<string> RoboNames = new List<string>();
+        RoboNames.add("Bender");
+        RoboNames.add("WallE");
+        RoboNames.add("Gort");
 
+            foreach (string Name in RoboNames)
+            {
+            
+            }
+    
     }
 }

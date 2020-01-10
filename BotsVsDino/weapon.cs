@@ -8,5 +8,9 @@ namespace BotsVsDino
 {
     class weapon
     {
+        public string Type;
+        public double Power;
+
+
     }
 }

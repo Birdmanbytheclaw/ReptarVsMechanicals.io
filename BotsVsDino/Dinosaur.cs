@@ -8,8 +8,8 @@ namespace BotsVsDino
 {
     class Dinosaur
     {
+        public double Name;
         public double DinoHealth;
-        public bool DinoEnergy;
         public double DinoAtkPower;
 
         
