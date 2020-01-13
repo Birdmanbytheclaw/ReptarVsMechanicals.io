@@ -7,18 +7,35 @@ using System.Threading.Tasks;
 namespace BotsVsDino
 {
      class Robot
-    { 
+    {
+        public string RoboName;
         public double RoboHealth;
         public double  RoboAtkPower;
-        List<string> RoboNames = new List<string>();
-        RoboNames.add("Bender");
-        RoboNames.add("WallE");
-        RoboNames.add("Gort");
+        public double RoboPowerLevel;
 
-            foreach (string Name in RoboNames)
-            {
+        public Robot(string RoboName)
+        {
+            RoboPowerLevel = 99;
+            RoboHealth = 999;
+            this.RoboName = RoboName;
+            RoboAtkPower = 9;
+        }
+
+        public void Attack(Dinosaur dinosaur)
+        {
+            RoboHealth -= 9;
+            DisplayRobot();
+        }
+        public void DisplayRobot()
+        {
+            Console.WriteLine(RoboName);
+            Console.WriteLine(RoboHealth);
+            Console.WriteLine(RoboAtkPower);
+            Console.WriteLine(RoboPowerLevel);
+        }
             
-            }
-    
+
+       
+           
     }
 }
